@@ -1,0 +1,59 @@
+.hero {
+	background-image: url(..//../static/bgimage.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	
+		background: 
+		radial-gradient(
+			circle at bottom
+			rgba(0, 0, 0, 0.7)
+			rgba(0, 0, 0, 0) 70%
+		)
+		;
+}
+
+.hero__wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.hero__title{
+	font-size: 80px;
+	color: white;
+	letter-spacing: 3px;
+	font-family: "Bebas Neue", serif;
+}
+
+.hero__text{
+	font-family: "Bebas Neue", serif;
+	font-size: 24px;
+	color: white;
+	letter-spacing: 3px;
+}
+
+.hero__button{
+	background-color: #F3AF34;
+	padding: 20px;
+	font-weight: bold;
+	display: flex;
+	border-radius: 3px;
+	gap: 24px;
+	position: relative;
+}
+
+.hero__button::before{
+	content: '';
+	position: absolute;
+	right: 85px;
+	top: 20px;
+	width: 0.5px;
+	height: 24px;
+	background-color: black;
+}
+
