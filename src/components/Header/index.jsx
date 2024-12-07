@@ -25,7 +25,7 @@ const Header = () => {
 					<a className={css.header__logo} href='#'>
 						<img src={logo} />
 					</a>
-					<ul className={css.header__list}>
+					{/* <ul className={css.header__list}>
 						{navList.map(({ id, name, slug }) => (
 							<li key={id} className={css.header__listItem}>
 								<a className={css.headerListLink} href={slug}>
@@ -33,13 +33,8 @@ const Header = () => {
 								</a>
 							</li>
 						))}
-					</ul>
-					<div className={css.header__burger}>
-						<Burger 
-						burgerHandler={burgerHandler} 
-						isOpen={isMenuOpen}
-						 />
-					</div>
+					</ul> */}
+
 					<div className={css.header__button}>
 						<Language />
 						<a href='#' className={css.header__steam}>
@@ -48,6 +43,21 @@ const Header = () => {
 						<a href='#' className={css.header__steam}>
 							<img src={steam} alt='steam' />
 						</a>
+					</div>
+					<div className={css.header__burger}>
+						<Burger burgerHandler={burgerHandler} isOpen={isMenuOpen} />
+
+						<div className={isMenuOpen ? css.show : css.neshow}>
+							<ul className={css.header__list}>
+								{navList.map(({ id, name, slug }) => (
+									<li key={id} className={css.header__listItem}>
+										<a className={css.header__ListLink} href={slug}>
+											{name}
+										</a>
+									</li>
+								))}
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -4,7 +4,7 @@ import css from './style.module.css'
 const MainPage = () => {
 	return (
 		<section className={css.hero}>
-			<div className={css.container}>
+			<div className='container'>
 				<div className={css.hero__wrapper}>
 					<p className={css.hero__title}>SURVIVE AT ALL COSTS</p>
 					<p className={css.hero__text}>
@@ -17,7 +17,10 @@ const MainPage = () => {
 				</div>
 			</div>
 		</section>
+		
 	)
 }
+
+
 
 export default MainPage
