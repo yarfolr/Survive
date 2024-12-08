@@ -17,10 +17,7 @@ const MainPage = () => {
 				</div>
 			</div>
 		</section>
-		
 	)
 }
-
-
 
 export default MainPage

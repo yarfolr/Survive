@@ -7,16 +7,12 @@ import xbox from '../../assets/xbox icon.svg'
 import Burger from './../Burger'
 import { useState } from 'react'
 
-
 const Header = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	
-
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
 
 	const burgerHandler = () => {
 		setIsMenuOpen(!isMenuOpen)
 	}
-
 
 	return (
 		<header className={css.header}>
