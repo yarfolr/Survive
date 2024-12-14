@@ -1,9 +1,15 @@
+
 .swiper__hero{
-	width: 350px;
-	padding-top: 900px;
+	width: 300px;
+	padding-top: 50px;
 	
 }
-
+@media screen and (min-width: 960px) {
+	.swiper__hero {
+		width: 400px;
+		padding-top: 277px;
+	}
+}
 .swiper__image{
 	border-radius: 6px;
 }
